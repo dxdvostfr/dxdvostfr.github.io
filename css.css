@@ -2,6 +2,8 @@
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
+
+
 body {
     margin: 0
 }
@@ -23857,3 +23859,59 @@ only screen and (min-resolution:192dpi) and (min-width:1300px) {
         min-width: 40%
     }
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  color: white;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.hdselect {
+  position: relative;
+  display: flex;
+  width: 12em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+}
+/* text */
+select {
+  flex: 1;
+  padding: 0 .5em;
+  cursor: pointer;
+}
+/* Arrow */
+.hdselect::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.hdselect:hover::after {
+  color: #e08053;
+}
+
+
