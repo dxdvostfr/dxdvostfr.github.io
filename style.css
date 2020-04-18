@@ -2,8 +2,6 @@
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
-
-
 body {
     margin: 0
 }
@@ -436,84 +434,160 @@ body:not(.touched):not(.wnd-cms) .text p font[color] a:hover {
     text-align: right
 }
 
-font.wnd-font-size-10 {
+.wnd-font-size-10 {
     font-size: 10%
 }
 
-font.wnd-font-size-20 {
+.wnd-font-size-20 {
     font-size: 20%
 }
 
-font.wnd-font-size-30 {
+.wnd-font-size-30 {
     font-size: 30%
 }
 
-font.wnd-font-size-40 {
+.wnd-font-size-40 {
     font-size: 40%
 }
 
-font.wnd-font-size-50 {
+.wnd-font-size-50 {
     font-size: 50%
 }
 
-font.wnd-font-size-60 {
+.wnd-font-size-60 {
     font-size: 60%
 }
 
-font.wnd-font-size-70 {
+.wnd-font-size-70 {
     font-size: 70%
 }
 
-font.wnd-font-size-80 {
+.wnd-font-size-80 {
     font-size: 80%
 }
 
-font.wnd-font-size-90 {
+.wnd-font-size-90 {
     font-size: 90%
 }
 
-font.wnd-font-size-100 {
+.wnd-font-size-100 {
     font-size: 100%
 }
 
-font.wnd-font-size-110 {
+.wnd-font-size-110 {
     font-size: 110%
 }
 
-font.wnd-font-size-120 {
+.wnd-font-size-120 {
     font-size: 120%
 }
 
-font.wnd-font-size-130 {
+.wnd-font-size-130 {
     font-size: 130%
 }
 
-font.wnd-font-size-140 {
+.wnd-font-size-140 {
     font-size: 140%
 }
 
-font.wnd-font-size-150 {
+.wnd-font-size-150 {
     font-size: 150%
 }
 
-font.wnd-font-size-160 {
+.wnd-font-size-160 {
     font-size: 160%
 }
 
-font.wnd-font-size-170 {
+.wnd-font-size-170 {
     font-size: 170%
 }
 
-font.wnd-font-size-180 {
+.wnd-font-size-180 {
     font-size: 180%
 }
 
-font.wnd-font-size-190 {
+.wnd-font-size-190 {
     font-size: 190%
 }
 
-font.wnd-font-size-200 {
+.wnd-font-size-200 {
     font-size: 200%
+}
+
+.title-center-200 {
+   font-size: 200%;
+   text-align: center
+}
+
+.title-center-180 {
+    font-size: 180%;
+    text-align: center
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  color: white;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.hdselect {
+  position: relative;
+  display: flex;
+  width: 12em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+}
+/* text */
+select {
+  flex: 1;
+  padding: 0 .5em;
+  cursor: pointer;
+  text-align-last:center;
+}
+/* Arrow */
+.hdselect::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.hdselect:hover::after {
+  color: #e08053;
+}
+
+@media screen and (max-width:767px) {
+    .button-mobile-global { display: flex; flex-flow: column; }
+    .button-mobile-prec { order: 2; }
+    .button-mobile-suiv { order: 1; }
+    .suiv-button-margin { margin: 0px 0px 40px ; }
+}
+
+.button-content {
+    white-space: nowrap;
 }
 
 .logo font[class*=wnd-font-size] {
@@ -980,7 +1054,6 @@ body:not(.wnd-cms) .parallax {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-    background: url(../../3y/3yb/3ybh5o.png) 0 0 no-repeat;
     background-size: 264px 88px;
     width: 44px;
     height: 44px
@@ -3763,7 +3836,7 @@ body:not(.wnd-cms):not(.touched) .image-block img {
     font-family: proxima-nova, Helvetica, Arial, sans-serif;
     border-radius: 3px;
     font-weight: 400;
-    padding: 11px 1.5em;
+    padding: 11px;
     border: 1px solid;
     min-width: 100%;
     max-width: 100%;
@@ -21144,7 +21217,7 @@ only screen and (min-resolution:192dpi) and (min-width:700px) {
         font-size: 1.875rem;
         line-height: 1.4;
         padding-top: 10px;
-        padding-bottom: 4px
+        padding-bottom: 5px
     }
     .header-01 .wnd-font-size-70.logo-borders .text-content,
     .header-01 .wnd-font-size-80.logo-borders .text-content,
@@ -23846,7 +23919,7 @@ only screen and (min-resolution:192dpi) and (min-width:1300px) {
     }
     #wnd_fe_footer_left:before,
     #wnd_fe_footer_left:visited:before {
-        content: "www.webnode.com  "
+        content:
     }
     #wnd_fe_footer_right {
         display: none
@@ -23859,59 +23932,3 @@ only screen and (min-resolution:192dpi) and (min-width:1300px) {
         min-width: 40%
     }
 }
-
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  border-style: solid;
-  border-color: white;
-  border-radius: 5px;
-  border-width: 1px;
-  outline: 0;
-  box-shadow: none;
-  background: transparent;
-  background-image: none;
-  color: white;
-}
-/* Remove IE arrow */
-select::-ms-expand {
-  display: none;
-}
-/* Custom Select */
-.hdselect {
-  position: relative;
-  display: flex;
-  width: 12em;
-  height: 3em;
-  line-height: 3;
-  overflow: hidden;
-  border-radius: .25em;
-}
-/* text */
-select {
-  flex: 1;
-  padding: 0 .5em;
-  cursor: pointer;
-}
-/* Arrow */
-.hdselect::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  background: transparent;
-  cursor: pointer;
-  pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
-}
-/* Transition */
-.hdselect:hover::after {
-  color: #e08053;
-}
-
-

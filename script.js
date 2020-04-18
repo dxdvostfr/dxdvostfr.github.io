@@ -3,7 +3,7 @@ var switcher$ = $('.switcher'),          // select element
 
 switcher$.on('change', switchIframeSrc); // event binding
 
-// our functiono to switch the iframe src
+// our function to switch the iframe src
 function switchIframeSrc() {
   // set the 'src' attribute of the iframe
   // to the value of the selected option
